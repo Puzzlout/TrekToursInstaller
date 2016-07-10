@@ -3,8 +3,8 @@
 ################################################################################
 echo "Cloning the repositories..."
 git clone https://github.com/Puzzlout/CloudDeploy.git
-git clone https://github.com/Puzzlout/Puzzlout/TrekToursFlyer.git
-git clone https://github.com/Puzzlout/Puzzlout/TrekToursApi.git
+git clone https://github.com/Puzzlout/TrekToursFlyer.git
+git clone https://github.com/Puzzlout/TrekToursApi.git
 ################################################################################
 # Renaming cloned repositories
 ################################################################################
