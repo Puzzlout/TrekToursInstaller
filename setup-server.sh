@@ -21,7 +21,7 @@ sh deploy/deploy.sh
 # Updating the PHP version and server
 ################################################################################
 echo "Updating the PHP version and server..."
-#sh deploy/php-upgrade.sh 7.0.1
+./deploy/php-upgrade.sh 7.0.1
 ################################################################################
 # Installing the applications
 ################################################################################
