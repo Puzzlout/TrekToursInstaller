@@ -2,16 +2,16 @@
 
 The repository within which the applications will be installed.
 Sources:
-- [https://github.com/Puzzlout/CloudDeploy](CloudDeploy repository)
-- [https://github.com/Puzzlout/TrekToursFlyer](TrekTours flyer website application)
-- [https://github.com/Puzzlout/TrekToursApi](TrekTours API application)
+- [Deployment helpers scripts](https://github.com/Puzzlout/CloudDeploy)
+- [TrekTours flyer website application](https://github.com/Puzzlout/TrekToursFlyer)
+- [TrekTours API application](https://github.com/Puzzlout/TrekToursApi)
 
 # Requirements
 
 You need:
 - Git
 - Composer
-- A PHP 7 server (*** The API will not work with PHP 5***). Checkout MAMP for MAC or XAMP for Windows
+- A PHP 7 server (***The API will not work with PHP 5***). Checkout MAMP for MAC or XAMP for Windows
 - MySQL 5 server and a root user with no password
 
 # Local setup and installation on Macintosh computers
@@ -44,7 +44,7 @@ While the installers are running:
 3. When prompted about the parameters for the Flyer, input your API service URL if you decided to use the virtual host 
 and that "http://localhost/api/web" is not your URL. 
 
-# [http://c9.io/](Cloud 9) installation
+# [Cloud 9](http://c9.io/) installation
 
 - Create a new workspace and input `https://github.com/Puzzlout/TrekToursInstaller.git` in "Clone from Git".
 - Run `bash first-install-c9.sh` (***READ THE NOTES BEFORE RUNNING THIS COMMAND***)
