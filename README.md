@@ -50,5 +50,7 @@ and that "http://localhost/api/web" is not your URL.
 - Run `bash first-install-c9.sh` (***READ THE NOTES BEFORE RUNNING THIS COMMAND***)
 
 Note 1: it will update the server and the PHP version to 7.0.8. Check out the script `php-upgrade.sh` in the `deploy` folder
+
 Note 2: when prompted for the API database name, input "c9".
-Note 3: when prompted for the API service URL during the website installation, input "https://***<your workspace name>***-***<your c9 username>***.c9users.io/api/web/app.php.
+
+Note 3: when prompted for the API service URL during the website installation, input "https://***{{your workspace name}}***-***{{your c9 username}}***.c9users.io/api/web/app.php.
