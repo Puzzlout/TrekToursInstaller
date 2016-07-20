@@ -16,5 +16,5 @@ mv TrekToursApi api
 # Installing the applications
 ################################################################################
 echo "Installing the applications"
-sh /www/sites/deploy/Projects/TrekTours/Api/install-locally-mac.sh prod
-sh /www/sites/deploy/Projects/TrekTours/Flyer/install-locally-mac.sh prod
+sh /www/sites/deploy/Projects/TrekTours/Api/install-locally-unix.sh prod
+sh /www/sites/deploy/Projects/TrekTours/Flyer/install-locally-unix.sh prod
