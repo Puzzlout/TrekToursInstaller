@@ -14,7 +14,7 @@ You need:
 - A PHP 7 server (***The API will not work with PHP 5***). Checkout [MAMP](https://www.mamp.info/) for MAC or [XAMP](https://www.apachefriends.org/fr/index.html) for Windows, Linux and MAC
 - MySQL 5 server and a root user with no password
 
-# Local setup and installation on Macintosh computers
+# Local setup and installation on Linux and Macintosh computers
 
 The installers are setup so that your DocumentRoot is `/www/sites` and your folder structure will be:
 
@@ -44,7 +44,11 @@ While the installers are running:
 3. When prompted about the parameters for the Flyer, input your API service URL if you decided to use the virtual host 
 and that "http://localhost/api/web" is not your URL. 
 
-# [Cloud 9](http://c9.io/) installation
+# Local setup and installation on Windows computers
+
+Coming soon...
+
+# [Cloud 9 IDE](http://c9.io/) installation
 
 - Create a new workspace and input `https://github.com/Puzzlout/TrekToursInstaller.git` in "Clone from Git".
 - Run `bash first-install-c9.sh` (***READ THE NOTES BEFORE RUNNING THIS COMMAND***)
