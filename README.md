@@ -9,6 +9,7 @@ Sources:
 # Requirements
 
 You need:
+
 - Git
 - Composer
 - A PHP 7 server (***The API will not work with PHP 5***). Checkout [MAMP](https://www.mamp.info/) for MAC or [XAMP](https://www.apachefriends.org/fr/index.html) for Windows, Linux and MAC
@@ -39,6 +40,7 @@ bash first-install-locally-mac.sh
 ```
 
 While the installers are running:
+
 1. You should not see any error except for the trektoursapi database warm up. Let the installer finish.
 2. When prompted about the parameters for the API, hit return if you want to keep the default (***recommended***).
 3. When prompted about the parameters for the Flyer, input your API service URL if you decided to use the virtual host 
