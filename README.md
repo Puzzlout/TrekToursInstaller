@@ -10,10 +10,11 @@ Sources:
 
 You need:
 
-- Git
-- Composer
+- [Git](https://git-scm.com/) and a [Github account](https://github.com/)
+- [Composer](https://getcomposer.org/)
+- [NodeJS package manager](https://www.npmjs.com/) (for Bower install in the public application)
 - A PHP 7 server (***The API will not work with PHP 5***). Checkout [MAMP](https://www.mamp.info/) for MAC or [XAMP](https://www.apachefriends.org/fr/index.html) for Windows, Linux and MAC
-- MySQL 5 server and a root user with no password
+- [MySQL 5 server](https://www.mysql.com/downloads/) and a root user with no password. You can easily create that user with [MySQL workbench](https://www.mysql.fr/products/workbench/)
 
 # Local setup and installation on Linux and Macintosh computers
 
