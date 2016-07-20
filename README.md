@@ -11,7 +11,7 @@ Sources:
 You need:
 - Git
 - Composer
-- A PHP 7 server (***The API will not work with PHP 5***). Checkout MAMP for MAC or XAMP for Windows
+- A PHP 7 server (***The API will not work with PHP 5***). Checkout [MAMP](https://www.mamp.info/) for MAC or [XAMP](https://www.apachefriends.org/fr/index.html) for Windows, Linux and MAC
 - MySQL 5 server and a root user with no password
 
 # Local setup and installation on Macintosh computers
