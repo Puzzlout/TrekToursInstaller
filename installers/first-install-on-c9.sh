@@ -19,6 +19,9 @@ echo "Updating the server"
 sh deploy/deploy.sh
 ################################################################################
 # Updating the PHP version and server
+#
+# You will need to look at this file as there is one input during the php 
+# upgrade: https://github.com/Puzzlout/CloudDeploy/blob/master/php-upgrade.sh
 ################################################################################
 echo "Updating the PHP version and server..."
 bash deploy/php-upgrade.sh 7.0.8
