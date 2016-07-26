@@ -16,5 +16,5 @@ mv TrekToursApi api
 # Installing the applications
 ################################################################################
 echo "Installing the applications"
-sh /home/puzzlout/www/trektours/deploy/Projects/TrekTours/Api/install-lw.sh prod
-sh /home/puzzlout/www/trektours/deploy/Projects/TrekTours/Flyer/install-lw.sh prod
+sh /home/puzzlout/public_html/trektours/deploy/Projects/TrekTours/Api/install-lw.sh prod
+sh /home/puzzlout/public_html/trektours/deploy/Projects/TrekTours/Flyer/install-lw.sh prod

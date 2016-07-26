@@ -1,3 +1,3 @@
 git pull
-cd /home/puzzlout/www/trektours/deploy
+cd /home/puzzlout/public_html/trektours/deploy
 git pull
