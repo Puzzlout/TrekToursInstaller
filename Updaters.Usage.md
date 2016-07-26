@@ -7,15 +7,15 @@ They work locally, on Cloud9 and more.
 # Example usage locally on UNIX systems
 
 ```
-bash update-installers-locally-unix.sh
-bash updaters/update-api-locally-mac.sh 1.0.0.44
-bash updaters/update-flyer-locally-mac.sh 1.0.0.322
+bash local-unix/update-installers.sh
+bash local-unix/update-api.sh 1.0.0.44
+bash local-unix/update-flyer.sh 1.0.0.322
 ```
 
 # Example usage on Cloud 9
 
 ```
-bash update-installers-c9.sh
-bash updaters/update-api-c9.sh 1.0.0.44
-bash updaters/update-flyer-c9.sh 1.0.0.322
+bash c9/update-installers.sh
+bash c9/update-api.sh 1.0.0.44
+bash c9/update-flyer.sh 1.0.0.322
 ```
