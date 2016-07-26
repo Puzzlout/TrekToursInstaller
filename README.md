@@ -37,7 +37,7 @@ mkdir wwww
 cd wwww
 # clone this repository
 git clone https://github.com/Puzzlout/TrekToursInstaller.git
-bash first-install-locally-mac.sh
+bash local-unix/first-install.sh
 ```
 
 While the installers are running:
@@ -54,7 +54,7 @@ Coming soon...
 # [Cloud 9 IDE](http://c9.io/) installation
 
 - Create a new workspace and input `https://github.com/Puzzlout/TrekToursInstaller.git` in "Clone from Git".
-- Run `bash first-install-c9.sh` (***READ THE NOTES BEFORE RUNNING THIS COMMAND***)
+- Run `bash c9/first-install.sh` (***READ THE NOTES BEFORE RUNNING THIS COMMAND***)
 
 Note 1: it will update the server and the PHP version to 7.0.8. Check out the script `php-upgrade.sh` in the `deploy` folder
 
