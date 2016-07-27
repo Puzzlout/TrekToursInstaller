@@ -10,7 +10,8 @@ if [ "$1" == "" ]
 fi
 if [ "$1" != "" ]
 	then
-		sh /home/puzzlout/public_html/trektours/deploy/Projects/TrekTours/Api/update-lw.sh prod $1
+		cd /home/puzzlout/public_html/trektours/deploy/Projects/TrekTours/Api
+		bash update-lw.sh prod $1
 fi
 echo "Updates have been run"
 
