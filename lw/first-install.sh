@@ -22,3 +22,6 @@ cd $pathApi
 bash install-lw.sh prod $1
 cd $pathFlyer
 bash install-lw.sh prod $1
+cd "home/puzzlout/public_html/"
+su
+chmod -R 755 "$1/"
