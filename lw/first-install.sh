@@ -1,3 +1,5 @@
+pathApi="/home/puzzlout/public_html/$1/deploy/Projects/TrekTours/Api"
+pathFlyer="/home/puzzlout/public_html/$1/deploy/Projects/TrekTours/Flyer"
 ################################################################################
 # Cloning the repositories
 ################################################################################
@@ -16,7 +18,7 @@ mv TrekToursApi api
 # Installing the applications
 ################################################################################
 echo "Installing the applications"
-cd /home/puzzlout/public_html/trektours/deploy/Projects/TrekTours/Api
-bash install-lw.sh prod
-cd /home/puzzlout/public_html/trektours/deploy/Projects/TrekTours/Flyer
-bash install-lw.sh prod
+cd $pathApi
+bash install-lw.sh prod $1
+cd $pathFlyer
+bash install-lw.sh prod $1
