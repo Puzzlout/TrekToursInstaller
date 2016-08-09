@@ -3,6 +3,7 @@
 # 
 # Input $1: the current install directory
 ################################################################################
+cd $1
 ################################################################################
 # Cloning the repositories
 ################################################################################
@@ -21,5 +22,5 @@ mv TrekToursApi api
 # Installing the applications
 ################################################################################
 echo "Installing the applications"
-sh $1/deploy/Projects/TrekTours/Api/install.sh prod $1
-sh $1/deploy/Projects/TrekTours/Flyer/install.sh prod $1
+bash deploy/Projects/TrekTours/Api/install.sh prod $1
+bash deploy/Projects/TrekTours/Flyer/install.sh prod $1
