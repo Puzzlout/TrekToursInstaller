@@ -2,6 +2,10 @@
 # First install script
 # 
 # Input $1: the current install directory
+# Input $2: the target server:
+# 	-> local
+#	-> c9: a Cloud9 workspace
+#	-> lw: a LiquidWeb Storm VPS
 ################################################################################
 cd $1
 ################################################################################
@@ -22,5 +26,5 @@ mv TrekToursApi api
 # Installing the applications
 ################################################################################
 echo "Installing the applications"
-bash deploy/Projects/TrekTours/Api/install.sh prod $1
-bash deploy/Projects/TrekTours/Flyer/install.sh prod $1
+bash deploy/Projects/TrekTours/Api/install.sh prod $1 $2
+bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2
