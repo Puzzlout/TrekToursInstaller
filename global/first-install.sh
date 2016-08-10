@@ -15,8 +15,8 @@
 #		-> all: parameter $4 will not be used.
 #		TODO: accept array of tags when $3 is all to specify the tag to install for api and flyer
 # 
-# Input $4: the tag to deploy the install from
-################################################################################
+# Input $4: the tag to deploy the install from.
+#
 ################################################################################
 # Parameters check
 ################################################################################
@@ -38,21 +38,21 @@ case "$2" in
     exit "The server parameter is not given nor a valid value. Valid values: local, c9, lw."
     ;;
 esac
-case "$3" in
-'api')
-    echo "Only API will be installed."
-    ;;
-'flyer')
-    echo "Only Flyer will be installed."
-    ;;
-'all')
-    echo "API and Flyer will be installed."
-    $all = 1
-    ;;
-*)
-    exit "The third parameter is not given nor a valid value. Valid values: api, flyer, all."
-    ;;
-esac
+# case "$3" in
+# 'api')
+#     echo "Only API will be installed."
+#     ;;
+# 'flyer')
+#     echo "Only Flyer will be installed."
+#     ;;
+# 'all')
+#     echo "API and Flyer will be installed."
+#     $all = 1
+#     ;;
+# *)
+#     exit "The third parameter is not given nor a valid value. Valid values: api, flyer, all."
+#     ;;
+# esac
 
 ################################################################################
 # Navigating to the install folder 
@@ -76,16 +76,8 @@ mv TrekToursApi api
 # Installing the applications
 ################################################################################
 echo "Installing the applications"
-if [ $all == 1 ] then $3 = "api" fi 
-if [ $3 == 'api' ]
-	then
-		bash deploy/Projects/TrekTours/Api/install.sh prod $1 $2 $4
-fi
-if [ $all == 1 ] then $3 = "flyer" fi 
-if [ $3 == 'flyer' ]
-	then
-		bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2 $4
-fi
+bash deploy/Projects/TrekTours/Api/install.sh prod $1 $2 $4
+bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2 $4
 ################################################################################
 # LiquidWeb permissions
 ################################################################################
