@@ -6,6 +6,31 @@
 # 	-> local
 #	-> c9: a Cloud9 workspace
 #	-> lw: a LiquidWeb Storm VPS
+# Input $3: the branch to deploy install from
+################################################################################
+################################################################################
+# Parameters check
+################################################################################
+if [ $1 == "" ]
+	then
+		exit "The first argument is missing. It must be the folder where the applications needs to be installed."
+fi
+case "$2" in
+'local')
+    echo "Installing on local server..."
+    ;;
+'c9')
+    echo "Installing on Cloud9 workspace..."
+    ;;
+'lw')
+    echo "Installing on LiquidWeb VPS..."
+    ;;
+*)
+    exit "The server Parameter is not given nor. Valid value: local, c9, lw."
+    ;;
+esac
+################################################################################
+# Navigating to the install folder 
 ################################################################################
 cd $1
 ################################################################################
@@ -28,3 +53,7 @@ mv TrekToursApi api
 echo "Installing the applications"
 bash deploy/Projects/TrekTours/Api/install.sh prod $1 $2
 bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2
+################################################################################
+# Navigating to the root folder 
+################################################################################
+cd ..
