@@ -84,5 +84,6 @@ bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2 $4
 if [ $2 == "lw" ]
 	then
 		su
+		chown -R puzzlout "$1/"
 		chmod -R 755 "$1/"
 fi
