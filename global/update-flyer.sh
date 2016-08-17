@@ -1,7 +1,12 @@
 ################################################################################
 # Installing updates of the applications
 # 
-# Input $1: the git tag to release the API updates
+# Input $1: the git tag to release the Flyer updates
+# Input $2: full absolute path to install directory
+# Input $3: the target server:
+# -> local
+#	-> c9: a Cloud9 workspace
+#	-> lw: a LiquidWeb Storm VPS
 ################################################################################
 echo "Updating the application Flyer"
 if [ "$1" == "" ]
@@ -10,8 +15,12 @@ if [ "$1" == "" ]
 fi
 if [ "$1" != "" ]
 	then
-	sh /www/sites/deploy/Projects/TrekTours/Flyer/update-locally-unix.sh prod $1
+	  sh $2/deploy/Projects/TrekTours/Flyer/update.sh prod $1 $2
 fi
-
 echo "Updates have been run"
-
+if [ $3 == "lw" ]
+	then
+		su
+		chown -R puzzlout "$2/"
+		chmod -R 755 "$2/"
+fi
