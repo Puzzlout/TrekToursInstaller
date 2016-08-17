@@ -37,15 +37,17 @@ mkdir wwww
 cd wwww
 # clone this repository
 git clone https://github.com/Puzzlout/TrekToursInstaller.git
-bash local-unix/first-install.sh
+# Rename TrekToursInstaller to sites
+mv TrekToursInstaller sites
+# Install the applications
+bash sites/global/first-install.sh /www/sites/ local
 ```
 
 While the installers are running:
 
-1. You should not see any error except for the trektoursapi database warm up. Let the installer finish.
-2. When prompted about the parameters for the API, hit return if you want to keep the default (***recommended***).
-3. When prompted about the parameters for the Flyer, input your API service URL if you decided to use the virtual host 
-and that "http://localhost/api/web" is not your URL. 
+1. You should not see any error except for the api database warm up. If you are reinstalling from scratch and you didn't drop the database, you will see a constraint violation when adding the admin user. Let the installer finish.
+2. When prompted about the parameters for the API, hit return if you want to keep the default (***recommended***). If you want to use the custom local database settings, just specify a name and an existing user/password.
+3. When prompted about the parameters for the Flyer, input the API service URL to `http://localhost/api/web` or the URL to the API if you decided to use the virtual host. 
 
 # Local setup and installation on Windows computers
 
@@ -61,3 +63,7 @@ Note 1: it will update the server and the PHP version to 7.0.8. Check out the sc
 Note 2: when prompted for the API database name, input "c9".
 
 Note 3: when prompted for the API service URL during the website installation, input "https://***{{your workspace name}}***-***{{your c9 username}}***.c9users.io/api/web/app.php.
+
+# Liquid Web VPS
+
+Please request access to [this document](https://docs.google.com/document/d/1uwbUdu9l-lI1F9FPJtusEDkuP1QLmtPd3f9KLSchQdY).
