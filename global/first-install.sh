@@ -83,6 +83,6 @@ bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2 $4
 ################################################################################
 if [ $2 == "lw" ]
 	then
-		su
-		chmod -R 755 "$1/"
+		logout
+		chmod -R 755 "/home/puzzlout/public_html/$1"
 fi
