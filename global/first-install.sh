@@ -24,6 +24,7 @@ if [ $1 == "" ]
 	then
 		exit "The first argument is missing. It must be the folder where the applications needs to be installed."
 fi
+useLocalComposer="0"
 case "$2" in
 'local')
     echo "Installing on local server..."
@@ -33,6 +34,10 @@ case "$2" in
     ;;
 'lw')
     echo "Installing on LiquidWeb VPS..."
+    ;;
+'hh')
+    echo "Installing on HurrayHost..."
+    $useLocalComposer="1"
     ;;
 *)
     exit "The server parameter is not given nor a valid value. Valid values: local, c9, lw."
@@ -76,8 +81,8 @@ mv TrekToursApi api
 # Installing the applications
 ################################################################################
 echo "Installing the applications"
-bash deploy/Projects/TrekTours/Api/install.sh prod $1 $2 $4
-bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2 $4
+bash deploy/Projects/TrekTours/Api/install.sh prod $1 $2 $4 $useLocalComposer
+bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2 $4 $useLocalComposer
 ################################################################################
 # LiquidWeb permissions
 ################################################################################
