@@ -37,7 +37,7 @@ case "$2" in
     ;;
 'hh')
     echo "Installing on HurrayHost..."
-    $useLocalComposer="1"
+    useLocalComposer="1"
     ;;
 *)
     exit "The server parameter is not given nor a valid value. Valid values: local, c9, lw."
