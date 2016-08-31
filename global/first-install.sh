@@ -81,8 +81,8 @@ mv TrekToursApi api
 # Installing the applications
 ################################################################################
 echo "Installing the applications"
-bash deploy/Projects/TrekTours/Api/install.sh prod $1 $2 $4 $useLocalComposer
-bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2 $4 $useLocalComposer
+bash deploy/Projects/TrekTours/Api/install.sh prod $1 $2 $4
+bash deploy/Projects/TrekTours/Flyer/install.sh prod $1 $2 $4
 ################################################################################
 # LiquidWeb permissions
 ################################################################################
