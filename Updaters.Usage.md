@@ -12,9 +12,9 @@ bash sites/global/update-api.sh '1.0.4' 'sites/' 'local'
 bash sites/global/update-flyer.sh '1.0.6' 'sites/' 'local'
 ```
 
-Parameter 1: the update version to install. 
-Parameter 2: the target directory to install the update.
-Parameter 3: the target environnement (local, lw).
+- Parameter 1: the update version to install. 
+- Parameter 2: the target directory to install the update.
+- Parameter 3: the target environnement (local, lw).
 
 ***Always put each parameter between single quotes.***
 
