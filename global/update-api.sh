@@ -9,18 +9,13 @@
 #	-> lw: a LiquidWeb Storm VPS
 ################################################################################
 echo "Updating the application API"
-useLocalComposer="0"
-if [ "$3" = "hh" ]
-	then
-		$useLocalComposer="1"
-fi
 if [ "$1" == "" ]
 	then
 		echo "WARNING: you must include a git tag to install updates for API!"
 fi
 if [ "$1" != "" ]
 	then
-		sh $2/deploy/Projects/TrekTours/Api/update.sh prod $1 $2 $useLocalComposer
+		sh $2/deploy/Projects/TrekTours/Api/update.sh prod $1 $2
 fi
 echo "Updates have been run"
 if [ $3 == "lw" ]
