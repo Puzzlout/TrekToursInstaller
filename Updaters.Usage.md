@@ -4,12 +4,12 @@ They work locally, on Cloud9 and more.
 
 ***IMPORTANT:*** The tags must exist on the given repositories to make the procedure work.
 
-# Example usage locally on UNIX systems
+# Example usage on UNIX systems
 
 ```
-bash local-unix/update-installers.sh
-bash local-unix/update-api.sh 1.0.0.44
-bash local-unix/update-flyer.sh 1.0.0.322
+bash global/update-installers.sh
+bash ***trektours***/global/update-api.sh '***1.0.4***' ***trektours***/ ***lw***
+bash ***trektours***/global/update-flyer.sh '***1.0.6***' ***trektours***/ ***lw***
 ```
 
 # Example usage on Cloud 9
