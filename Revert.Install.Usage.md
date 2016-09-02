@@ -6,7 +6,7 @@ They work locally, on Cloud9 and more.
 
 # Example usage locally on UNIX systems
 
-Identical to the update procedure but you ***MUST*** a release tag preceding the one installed. See [updater's MD](https://github.com/Puzzlout/TrekToursInstaller/blob/master/Updaters.Usage.md)
+Identical to the update procedure but you ***MUST*** a release tag preceding the one installed. See [updater's MD](https://github.com/Puzzlout/TrekToursInstaller/blob/master/Updater.Install.Usage.md)
 
 Example:
 
