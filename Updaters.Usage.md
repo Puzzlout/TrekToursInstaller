@@ -7,10 +7,16 @@ They work locally, on Cloud9 and more.
 # Example usage on UNIX systems
 
 ```
-bash global/update-installers.sh
-bash ***trektours***/global/update-api.sh '***1.0.4***' ***trektours***/ ***lw***
-bash ***trektours***/global/update-flyer.sh '***1.0.6***' ***trektours***/ ***lw***
+bash sites/global/update-installers.sh
+bash sites/global/update-api.sh '1.0.4' 'sites/' 'local'
+bash sites/global/update-flyer.sh '1.0.6' 'sites/' 'local'
 ```
+
+Parameter 1: the update version to install. 
+Parameter 2: the target directory to install the update.
+Parameter 3: the target environnement (local, lw).
+
+***Always put each parameter between single quotes.***
 
 # Example usage on Cloud 9
 
