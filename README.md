@@ -49,11 +49,13 @@ While the installers are running:
 2. When prompted about the parameters for the API, hit return if you want to keep the default (***recommended***). If you want to use the custom local database settings, just specify a name and an existing user/password.
 3. When prompted about the parameters for the Flyer, input the API service URL to `http://localhost/api/web` or the URL to the API if you decided to use the virtual host. 
 
-# Local setup and installation on Windows computers
+# First install
+
+## Local setup and installation on Windows computers
 
 Coming soon...
 
-# [Cloud 9 IDE](http://c9.io/) installation
+## [Cloud 9 IDE](http://c9.io/) installation
 
 - Create a new workspace and input `https://github.com/Puzzlout/TrekToursInstaller.git` in "Clone from Git".
 - Run `bash c9/first-install.sh` (***READ THE NOTES BEFORE RUNNING THIS COMMAND***)
@@ -64,6 +66,10 @@ Note 2: when prompted for the API database name, input "c9".
 
 Note 3: when prompted for the API service URL during the website installation, input "https://***{{your workspace name}}***-***{{your c9 username}}***.c9users.io/api/web/app.php.
 
-# Liquid Web VPS
+## Liquid Web VPS
 
 Please request access to [this document](https://docs.google.com/document/d/1uwbUdu9l-lI1F9FPJtusEDkuP1QLmtPd3f9KLSchQdY).
+
+# Deployment workflow
+
+Please request access to [this document](https://docs.google.com/spreadsheets/d/1rPxuFO0dfY1AmP2R_4Gr2nU1lPeWsOrXVhJFTwE3Vtg)
